@@ -1,10 +1,12 @@
 * {
     box-sizing: border-box;
 }
+/* sets font to Lora in the body */
 body {
     font-family: 'Lora', serif;
 }
 
+/* formats header */
 header {
     color: #590404;
     background-color: bisque ;
@@ -13,11 +15,12 @@ header {
     height: 140px;
     
 }
-
+/* font size for h1 tag */
 h1 {
   font-size: 36px;
 }
 
+/* font size for h2 tag */
 h2 {
     font-size: 28px;
 }
@@ -53,10 +56,10 @@ border: 2px solid lightcoral;
 border-radius: 10px;
 border-style: dashed;
 }
+/* fades background color when mouse hovers over the nav link */
 .nav-li:hover {
     background-color: #cf9898;
 }
-
 
 main {
     margin: -10px -10px;
@@ -65,15 +68,6 @@ main {
     border: 6px solid darkblue;
     border-style: thick;
     padding: 20px;
-}
-
-section {
-    
-}
-
-.about-me {
-
-    
 }
 
 .refactor-img img {
@@ -108,28 +102,28 @@ section {
 } */ */
 
 .prework-img {
-    display: flex;
+    
+    position: relative;
 }
 /* .refactor-img .github-img {
     flex: 33.33%;
 } */
-.prework-img img {
-    position: relative;
+.prework-img img{
+    
     border: 5px solid darkblue;
 }
 
 /* positioning and formatting of about me label, couldn't get to work well */
-/* .prework-img span {
+ /* .prework-img span:after {
     position: absolute;
-    /* top: 915px;
-    left: 28px; */
-    /* font-size: 30px;
+    top: 20px;
+    font-size: 30px;
     padding: 6px;
     color: #590404;
     border: 5px solid #590404;
     border-style: double;
     background-color: bisque;
-} */ 
+}  */
 /* border around the CSS image */
 .cheatsheet-img img {
     position: relative;
@@ -179,6 +173,7 @@ section {
     float: left;
 }
 
+/* formats and spaces links evenly and in a row, wraps upon screen change */
 .contact-links {
     color: rgb(5, 5, 97);
     font-size: 24px;
@@ -200,14 +195,17 @@ section {
     text-decoration-thickness: 5px;
 }
 
+/* when user is not on the resume section, my resume will not be displayed */
 #resume-pic {
     display: none;
 }
 
+/* When the user's mouse hovers over the resume header, it appears */
 .resume:hover #resume-pic{
     display: block;
 }
 
+/* formatting of footer */
 footer {
     color: #590404;
     background-color: bisque;
@@ -219,7 +217,7 @@ footer {
     justify-content: center;
 }
 
-
+/* flexes images to stay on screen and stay equally separated */
 @media screen and (max-width: 1800px) {
     
 
@@ -232,6 +230,7 @@ footer {
         display: block;
 
     }
+    /* flexes the resume section */
     #resume-pic {
         display: none;  
     }
@@ -246,6 +245,7 @@ display: flex;
 flex-wrap: wrap;
 }
 }
+/* when screen is smaller the nav bar will switch to rows to avoid overlap with title */
 @media screen and (max-width: 920px) {
     .nav-li {
         display: flex;
@@ -264,8 +264,8 @@ flex-wrap: wrap;
         font-size: 12px;
         margin: -5px;
     }
-
-@media screen and (max-width: 650px) {
+}
+@media screen and (max-width: 530px) {
     .nav-li {
             display: flex;
             flex-direction: row;
