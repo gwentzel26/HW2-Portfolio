@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body {
     font-family: 'Lora', serif;
 }
@@ -7,7 +10,7 @@ header {
     background-color: bisque ;
     margin: -10px;
     padding: 20px;
-    height: 100px;
+    height: 140px;
     
 }
 
@@ -39,12 +42,12 @@ a:hover {
    
 }
 
+/* Positioning, formatting, and styling the nav bar links */
 .nav-li {
 float: right;
 list-style-type: none;
 padding: 7px 7px;
 margin: 20px;
-position: relative;
 background-color: #c05858;
 border: 2px solid lightcoral;
 border-radius: 10px;
@@ -68,31 +71,103 @@ section {
     
 }
 
-section ul li {
-   float: left;
-
-}
-
 .about-me {
 
     
 }
 
-.work div {
+.refactor-img img {
+    position: relative;
+    border: 5px solid darkblue; 
+}
+.column {
     display: flex;
-    justify-content: center;
 }
 
-/* .prework-img {
-    height: 400px; */
-
-/* } */
-
-/* .cheatsheet-img {
-    height: 250px;
-    width: 300px;
-    
+/* .work span {
+    flex: 33.33%;
+    padding: 5px;
+    flex-wrap: wrap;
 } */
+
+
+
+
+/* positioning and formatting of code refactor label, couldn't get to work well */
+/* .refactor-label {
+    position: absolute;
+    /* top: 833px;
+    left: 1220px; */
+    /* margin: 67% 800px;
+    font-size: 30px;
+    padding: 6px;
+    color: #590404;
+    border: 5px solid #590404;
+    border-style: double;
+    background-color: bisque;
+} */ */
+
+.prework-img {
+    display: flex;
+}
+/* .refactor-img .github-img {
+    flex: 33.33%;
+} */
+.prework-img img {
+    position: relative;
+    border: 5px solid darkblue;
+}
+
+/* positioning and formatting of about me label, couldn't get to work well */
+/* .prework-img span {
+    position: absolute;
+    /* top: 915px;
+    left: 28px; */
+    /* font-size: 30px;
+    padding: 6px;
+    color: #590404;
+    border: 5px solid #590404;
+    border-style: double;
+    background-color: bisque;
+} */ 
+/* border around the CSS image */
+.cheatsheet-img img {
+    position: relative;
+    border: 5px solid darkblue;
+}
+/* positioning and formatting of CSS label */
+/* .cheatsheet-img span {
+    position: absolute;
+    top: 814px;
+    left: 669px;
+    font-size: 30px;
+    padding: 6px;
+    color: #590404;
+    border: 5px solid #590404;
+    border-style: double;
+    background-color: bisque;
+} */
+/* shadow on hover of image */
+.cheatsheet-img img:hover {
+    box-shadow: 10px 5px 5px rgb(60, 60, 155);
+}
+/* shadow on hover of image */
+.prework-img img:hover {
+    box-shadow: 10px 5px 5px rgb(60, 60, 155);
+}
+/* shadow on hover of image */
+.refactor-img img:hover {
+    box-shadow: 10px 5px 5px rgb(60, 60, 155);
+}
+
+
+/* Creating 3 columns so the images are side by side */
+.prework-img, .cheatsheet-img, .refactor-img {
+    flex: 33.33%;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
 
 .li-img-flex {
     display: flex;
@@ -110,10 +185,7 @@ section ul li {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-}
-
-.middle-dot {
-    height: 50px;
+    flex-wrap: wrap;
 }
 
 /* creates an underline under the link when the user hovers over it */
@@ -135,5 +207,71 @@ section ul li {
 .resume:hover #resume-pic{
     display: block;
 }
-/* 
-font-family: 'Cormorant Garamond', serif; */
+
+footer {
+    color: #590404;
+    background-color: bisque;
+    margin: -10px;
+    padding: 15px;
+    height: 100px;
+    border-top: 5px solid darkblue;
+    display: flex;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 1800px) {
+    
+
+    .work img {
+        display: flex;
+        height: 75%;
+        width: 75%;
+        float: left;
+        flex-direction: column;
+        display: block;
+
+    }
+    #resume-pic {
+        display: none;  
+    }
+    #resume-pic:hover {
+        display: flex;
+        height: 25%;
+        width: 25%;
+    }
+
+.refactor-label {
+display: flex;
+flex-wrap: wrap;
+}
+}
+@media screen and (max-width: 920px) {
+    .nav-li {
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        font-size: 16px;
+        
+        margin: 0px;
+    }
+}
+@media screen and (max-width: 650px) {
+    .nav-li {
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        font-size: 12px;
+        margin: -5px;
+    }
+
+@media screen and (max-width: 650px) {
+    .nav-li {
+            display: flex;
+            flex-direction: row;
+            width: 50%;
+            font-size: 10px;
+            display: block;
+            
+        }
+}
