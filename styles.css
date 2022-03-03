@@ -70,9 +70,9 @@ main {
     padding: 20px;
 }
 
-.refactor-img img {
+.dailyPlanner img {
     position: relative;
-    border: 5px solid darkblue; 
+    border: 3px solid darkblue; 
 }
 .column {
     display: flex;
@@ -99,18 +99,18 @@ main {
     border: 5px solid #590404;
     border-style: double;
     background-color: bisque;
-} */ */
+} */ 
 
-.prework-img {
+.marvel {
     
     position: relative;
 }
 /* .refactor-img .github-img {
     flex: 33.33%;
 } */
-.prework-img img{
+.marvel img{
     
-    border: 5px solid darkblue;
+    border: 3px solid darkblue;
 }
 
 /* positioning and formatting of about me label, couldn't get to work well */
@@ -125,38 +125,40 @@ main {
     background-color: bisque;
 }  */
 /* border around the CSS image */
-.cheatsheet-img img {
+.weatherDashboard img {
     position: relative;
-    border: 5px solid darkblue;
+    border: 3px solid darkblue;
 }
 /* positioning and formatting of CSS label */
-/* .cheatsheet-img span {
+/* .weatherDashboard a label {
     position: absolute;
-    top: 814px;
-    left: 669px;
-    font-size: 30px;
+    /* top: 814px;
+    left: 669px; */
+    /* margin-top: 240px;
+    margin-left: -350px;
+    font-size: 20px;
     padding: 6px;
     color: #590404;
     border: 5px solid #590404;
     border-style: double;
     background-color: bisque;
-} */
+} */ 
 /* shadow on hover of image */
-.cheatsheet-img img:hover {
+.weatherDashboard img:hover {
     box-shadow: 10px 5px 5px rgb(60, 60, 155);
 }
 /* shadow on hover of image */
-.prework-img img:hover {
+.marvel img:hover {
     box-shadow: 10px 5px 5px rgb(60, 60, 155);
 }
 /* shadow on hover of image */
-.refactor-img img:hover {
+.dailyPlanner img:hover {
     box-shadow: 10px 5px 5px rgb(60, 60, 155);
 }
 
 
 /* Creating 3 columns so the images are side by side */
-.prework-img, .cheatsheet-img, .refactor-img {
+.marvel, .weatherDashboard, .dailyPlanner {
     flex: 33.33%;
     padding: 5px;
     flex-wrap: wrap;
