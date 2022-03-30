@@ -70,7 +70,7 @@ main {
     padding: 20px;
 }
 
-.dailyPlanner img {
+.work3 img {
     position: relative;
     border: 3px solid darkblue; 
 }
@@ -125,7 +125,7 @@ main {
     background-color: bisque;
 }  */
 /* border around the CSS image */
-.weatherDashboard img {
+.work2 img {
     position: relative;
     border: 3px solid darkblue;
 }
@@ -144,7 +144,7 @@ main {
     background-color: bisque;
 } */ 
 /* shadow on hover of image */
-.weatherDashboard img:hover {
+.work2 img:hover {
     box-shadow: 10px 5px 5px rgb(60, 60, 155);
 }
 /* shadow on hover of image */
@@ -152,13 +152,13 @@ main {
     box-shadow: 10px 5px 5px rgb(60, 60, 155);
 }
 /* shadow on hover of image */
-.dailyPlanner img:hover {
+.work3 img:hover {
     box-shadow: 10px 5px 5px rgb(60, 60, 155);
 }
 
 
 /* Creating 3 columns so the images are side by side */
-.marvel, .weatherDashboard, .dailyPlanner {
+.marvel, .work2, .work3{
     flex: 33.33%;
     padding: 5px;
     flex-wrap: wrap;
